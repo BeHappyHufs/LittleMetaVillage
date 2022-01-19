@@ -3922,7 +3922,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143595531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.9, y: -64.3, z: 0}
+  m_LocalPosition: {x: -46.9, y: -341, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -9908,7 +9908,7 @@ RectTransform:
   m_GameObject: {fileID: 316796780}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.6381412, y: 2.895448, z: 1}
+  m_LocalScale: {x: 1.7147917, y: 2.2439432, z: 1}
   m_Children:
   - {fileID: 969716008}
   - {fileID: 734227038}
@@ -9917,7 +9917,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -329, y: -58}
+  m_AnchoredPosition: {x: -245, y: 13}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316796782
@@ -25147,7 +25147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802017848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 593.1, y: 295.7, z: 0}
+  m_LocalPosition: {x: 593.1, y: 19.000015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -30610,7 +30610,7 @@ RectTransform:
   m_GameObject: {fileID: 1050558147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5776102, y: 0.6557968, z: 1}
+  m_LocalScale: {x: 0.3176625, y: 0.40167555, z: 1}
   m_Children:
   - {fileID: 1029144314}
   - {fileID: 1466001735}
@@ -30619,7 +30619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -307, y: 176}
+  m_AnchoredPosition: {x: -248, y: 152}
   m_SizeDelta: {x: 982.6947, y: 446.17004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1050558149
@@ -43105,7 +43105,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1090033545}
   m_HandleRect: {fileID: 1090033544}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
