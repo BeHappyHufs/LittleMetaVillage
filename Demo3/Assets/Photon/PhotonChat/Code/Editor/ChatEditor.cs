@@ -12,10 +12,13 @@
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine.Networking;
-
+//#if !PHOTON_UNITY_NETWORKING
 using System;
 using UnityEditor;
 using UnityEngine;
+
+
+#if UNITY_EDITOR
 
 [InitializeOnLoad]
 public class ChatEditor : EditorWindow
@@ -318,20 +321,20 @@ public class ChatEditor : EditorWindow
                 }
             }
 
-            #if UNITY_2017_2_OR_NEWER
+#if UNITY_2017_2_OR_NEWER
             yield return w.SendWebRequest();
-            #else
+#else
             yield return w.Send();
-            #endif
+#endif
 
             while (w.isDone == false)
                 yield return null;
 
-            #if UNITY_2017_1_OR_NEWER
+#if UNITY_2017_1_OR_NEWER
             if (w.isNetworkError || w.isHttpError)
-            #else
+#else
             if (w.isError)
-            #endif
+#endif
             {
                 if (errorCallback != null)
                 {
@@ -348,4 +351,7 @@ public class ChatEditor : EditorWindow
         }
     }
 }
+#endif
 
+
+//#endif
