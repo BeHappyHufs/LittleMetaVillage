@@ -13,10 +13,10 @@ public class MatchMaker : MonoBehaviourPunCallbacks {
 	void Start () {
 
 		Debug.Log ("start");
-		PhotonNetwork.ConnectUsingSettings ();
         PhotonNetwork.GameVersion = "0.1";
 	}
 
+    public void Connect() => PhotonNetwork.ConnectUsingSettings();
 
     public override void OnConnectedToMaster()
     {
