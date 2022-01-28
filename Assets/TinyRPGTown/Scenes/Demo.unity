@@ -25276,6 +25276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputField: {fileID: 316796784}
   outputText: {fileID: 1057287816}
+  NickNameInput: {fileID: 418163360}
 --- !u!4 &802017850
 Transform:
   m_ObjectHideFlags: 0

@@ -11,13 +11,15 @@ public class ChatTest : MonoBehaviour, IChatClientListener {
 	public InputField inputField;
 	public Text outputText;
 
+	public InputField NickNameInput;
+
 	// Use this for initialization
 	void Start () {
 		
 		Application.runInBackground = true;
 
-		userName = System.Environment.UserName;
-		currentChannelName = "Channel 001";
+		userName = NickNameInput.text;
+		currentChannelName = "Welcome to Metaverse";
 
 		chatClient = new ChatClient(this);
 		chatClient.Connect(ChatSettings.Instance.AppId, "1.0", new AuthenticationValues(userName));
