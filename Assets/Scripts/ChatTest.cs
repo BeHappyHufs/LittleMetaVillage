@@ -111,6 +111,8 @@ public class ChatTest : MonoBehaviour, IChatClientListener {
 		if (chatClient.State == ChatState.ConnectedToFrontEnd)
 		{
 			//chatClient.PublishMessage(currentChannelName, text);
+			if (inputField.text.Trim() == "") return;
+			//if (inputField.text == null ) {}
 			chatClient.PublishMessage(currentChannelName, inputField.text);
 
 			inputField.text = "";
