@@ -7,7 +7,6 @@ using UnityEngine.UI;
 using Cinemachine;
 using MySql.Data.MySqlClient;
 using System;
-using UnityEngine.SceneManagement;
 
 
 public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
@@ -28,19 +27,25 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
 
     public PhotonView PV;
 
-    public InputField id;
-    public InputField password;
-    public InputField face;
-    public InputField hair;
-    public InputField body;
-    public InputField kit;
-    public GameObject upBut;
-    public GameObject failState;
+    public Image c_body;
+    public Image c_face;
+    public Image c_hair;
+    public Image c_kit;
+    public Sprite[] body;
+    public Sprite[] face;
+    public Sprite[] hair;
+    public Sprite[] kit;
+
+    public int num_body;
+    public int num_face;
+    public int num_hair;
+    public int num_kit;
 
 
     void Start()
     {
-       
+        ReadData();
+        ChoiceCharacter();
     }
 
     void Awake()
@@ -58,42 +63,49 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
         } 
 
     }
-
-    public void chageSecne()
+    public void ChoiceCharacter()
     {
-        SceneManager.LoadScene("Demo");
+        c_body.sprite = body[num_body];
+        c_face.sprite = face[num_face];
+        c_hair.sprite = hair[num_hair];
+        c_kit.sprite = kit[num_kit];
+
     }
 
-    public void up()
+    void ReadData()
     {
+
         using (MySqlConnection connection = new MySqlConnection("Server=us-cdbr-east-04.cleardb.com;Port=3306;Database=heroku_9739fee54be3ce9;Uid=b30ac1742c1d56;Pwd=6db3d0ba"))
         {
-            upBut.SetActive(false);
-            failState.SetActive(false);
-            string insertQ = "INSERT INTO avatar(id,body,face,hair,kit,password) VALUES('" + id.text + "', " + body.text + ", " + face.text + ", " + hair.text + ", " + kit.text + ", " + password.text + ")";
             try
             {
                 connection.Open();
-                MySqlCommand command = new MySqlCommand(insertQ, connection);
-                if (command.ExecuteNonQuery() == 1)
-                {
-                    upBut.SetActive(true);
-                    failState.SetActive(false);
-                    Debug.Log("가입 성공");
-                    Debug.Log(insertQ);
-                }
-                else
-                {
-                    failState.SetActive(true);
-                    upBut.SetActive(false);
-                    Debug.Log("가입 실패");
-                }
+                //string temp = "SELECT * FROM avatar WHERE id='";
+                string temp = "SELECT * FROM heroku_9739fee54be3ce9.avatar where id='";
+                string sql = temp + NickNameText.text + "'";
 
+                MySqlCommand cmd = new MySqlCommand(sql, connection);
+                MySqlDataReader table = cmd.ExecuteReader();
+                Debug.Log(sql);
+
+                while (table.Read())
+                {
+
+                    num_face = (int)table["face"];
+                    num_body = (int)table["body"];
+                    num_hair = (int)table["hair"];
+                    num_kit = (int)table["kit"];
+
+
+
+                }
+                table.Close();
             }
             catch (Exception ex)
             {
-                Debug.Log("완전 실패");
-                Debug.Log(insertQ);
+
+                Debug.Log("잘못된 정보입니다.");
+
                 Debug.Log(ex.ToString());
             }
         }
