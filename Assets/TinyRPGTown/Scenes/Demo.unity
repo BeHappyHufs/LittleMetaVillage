@@ -46029,8 +46029,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 745490379}
-        m_MethodName: Connect
+      - m_Target: {fileID: 1963377912}
+        m_MethodName: checkPlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -52915,8 +52915,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 745490379}
-        m_MethodName: Connect
+      - m_Target: {fileID: 1963377912}
+        m_MethodName: chageSecne
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
