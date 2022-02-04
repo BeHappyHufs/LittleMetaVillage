@@ -22,7 +22,7 @@ public class MatchMaker : MonoBehaviourPunCallbacks {
     {
         Debug.Log("OnConnectedToMaster() was called by PUN");
 
-        PhotonNetwork.JoinRandomRoom();
+        //  PhotonNetwork.JoinRandomRoom();
     }
 
 
