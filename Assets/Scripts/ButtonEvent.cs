@@ -12,10 +12,17 @@ public class ButtonEvent : MonoBehaviour
     public PlayerScript batcontrol2;
 
       
-    void Start()
+    public void Start()
     {
         player = GameObject.FindWithTag("Player");
-        batcontrol2 = player.GetComponent<PlayerScript>();
+        if (player)
+        {
+            batcontrol2 = player.GetComponent<PlayerScript>();
+        }
+        else
+        {
+            Debug.Log("No game object called wibble found");
+        }
     }
 
     // Update is called once per frame
