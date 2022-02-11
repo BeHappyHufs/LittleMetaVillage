@@ -21,6 +21,21 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public GameObject ChatController;
 
 
+    //오늘 만든 변수
+
+    //메인에서 나가기 버튼
+    public GameObject EscCanvas;
+
+    //게임 player Object
+    public GameObject player;
+
+    //ButtonEvent클래스 타입의 Player 재생성
+    public ButtonEvent buttonEvent;
+
+    //ChatTest클래스 타입의 채팅 재생성 : 채팅이 두번 만들어지는 문제 발생;;;
+    public ChatTest chatTest;
+
+
     void Awake()
     {
         Screen.SetResolution(960, 540, false);
@@ -28,6 +43,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.SerializationRate = 30;
     }
     public void Connect() => PhotonNetwork.ConnectUsingSettings();
+
 
     public override void OnConnectedToMaster()
     {
@@ -45,7 +61,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         ChatCanvas.SetActive(true);
         ChatController.SetActive(true);
 
-
         Spawn();
     }
 
@@ -53,22 +68,57 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public void Spawn()
     {
         PhotonNetwork.Instantiate("Player", Vector3.zero, Quaternion.identity);
-       
+        player = GameObject.FindWithTag("Player");
+        buttonEvent.Start();
+        chatTest.Start();
     }
 
-    //게임에서 나가지기를 만들기
-    void Update() {
-         if (Input.GetKeyDown(KeyCode.Escape) && PhotonNetwork.IsConnected)
-         {
-            PhotonNetwork.Disconnect();
-         } 
-    }
-
-    public override void OnDisconnected(DisconnectCause cause)
+    //돌아가기 버튼
+    public void Reuse()
     {
-        //DisconnectPanel.SetActive(true);
+        EscCanvas.SetActive(false);
+        ButtonManager.SetActive(true);
+        ButtonCanvas.SetActive(true);
+
+        ChatEventSystem.SetActive(true);
+        ChatCanvas.SetActive(true);
+        ChatController.SetActive(true);
+
+        player.SetActive(true);
+    }
+
+
+    //메인에서 나가기 버튼
+    public void EscButton()
+    {
+        EscCanvas.SetActive(true);
         ButtonManager.SetActive(false);
         ButtonCanvas.SetActive(false);
+
+        ChatEventSystem.SetActive(false);
+        ChatCanvas.SetActive(false);
+        ChatController.SetActive(false);
+
+        player.SetActive(false);
+
+    }
+
+
+    //다시 한번 나가기 버튼 클릭시 수행
+    public void DisConnect_Bum()
+    {
+        DisconnectPanel.SetActive(true);
+        EscCanvas.SetActive(false);
+
+        PhotonNetwork.Disconnect();
+
+    }
+
+ 
+    //서버가 연결이 안되었을때 실행되는 함수
+    public override void OnDisconnected(DisconnectCause cause)
+    {
+       
        
     }
 }
