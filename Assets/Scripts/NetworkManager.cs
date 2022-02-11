@@ -22,10 +22,17 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
 
     //오늘 만든 변수
+
+    //메인에서 나가기 버튼
     public GameObject EscCanvas;
+
+    //게임 player Object
     public GameObject player;
 
+    //ButtonEvent클래스 타입의 Player 재생성
     public ButtonEvent buttonEvent;
+
+    //ChatTest클래스 타입의 채팅 재생성 : 채팅이 두번 만들어지는 문제 발생;;;
     public ChatTest chatTest;
 
 
@@ -36,6 +43,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.SerializationRate = 30;
     }
     public void Connect() => PhotonNetwork.ConnectUsingSettings();
+
 
     public override void OnConnectedToMaster()
     {
@@ -53,7 +61,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         ChatCanvas.SetActive(true);
         ChatController.SetActive(true);
 
-
         Spawn();
     }
 
@@ -64,7 +71,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         player = GameObject.FindWithTag("Player");
         buttonEvent.Start();
         chatTest.Start();
-        print("마지막까지 됨");
     }
 
     //돌아가기 버튼
@@ -82,7 +88,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     }
 
 
-    //나가기 버튼
+    //메인에서 나가기 버튼
     public void EscButton()
     {
         EscCanvas.SetActive(true);
@@ -94,8 +100,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         ChatController.SetActive(false);
 
         player.SetActive(false);
-
-
 
     }
 
@@ -110,25 +114,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     }
 
-    /*
-    //게임에서 나가지기를 만들기
-    void Update() {
-         if (Input.GetKeyDown(KeyCode.Escape) && PhotonNetwork.IsConnected)
-         {
-            PhotonNetwork.Disconnect();
-        
-
-            DisconnectPanel.SetActive(true);
-            ButtonManager.SetActive(false);
-            ButtonCanvas.SetActive(false);
-
-            ChatEventSystem.SetActive(false);
-            ChatCanvas.SetActive(false);
-            ChatController.SetActive(false);
-        }
-    }
-    */
-
+ 
     //서버가 연결이 안되었을때 실행되는 함수
     public override void OnDisconnected(DisconnectCause cause)
     {

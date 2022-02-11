@@ -21,7 +21,7 @@ public class ButtonEvent : MonoBehaviour
         }
         else
         {
-            Debug.Log("No game object called wibble found");
+            Debug.Log("No game object called");
         }
     }
 
