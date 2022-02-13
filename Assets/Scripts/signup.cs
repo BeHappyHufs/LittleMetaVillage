@@ -16,6 +16,7 @@ public class signup : MonoBehaviour
     public InputField kit;
     public GameObject insertRoomBut;
     public GameObject failState;
+    public GameObject speakObject;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,10 @@ public class signup : MonoBehaviour
     public void chageSecne()
     {
         SceneManager.LoadScene("SignUp");
+        if(SceneManager.GetActiveScene().name == "Demo")
+        {
+            Destroy(speakObject);
+        }
     }
     public void checkPlayer()
     {
