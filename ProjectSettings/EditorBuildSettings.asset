@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TinyRPGTown/Scenes/Demo.unity
+    path: Assets/Scenes/Demo.unity
     guid: b87d6bd6fb69649ae8ba8542ffafc2b4
   - enabled: 1
     path: Assets/Scenes/SignUp.unity
     guid: 9646f86442ed4464faec46db27978861
+  - enabled: 1
+    path: Assets/Scenes/SecondScene.unity
+    guid: 8e980858fd820c341a47c3b40d3a19f5
   m_configObjects: {}
