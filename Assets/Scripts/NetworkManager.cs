@@ -4,7 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 public class NetworkManager : MonoBehaviourPunCallbacks
 {
@@ -99,6 +99,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         ChatCanvas.SetActive(false);
         ChatController.SetActive(false);
 
+        player = GameObject.FindWithTag("Player");
         player.SetActive(false);
 
     }
@@ -114,7 +115,17 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     }
 
- 
+    public void DisConnect_Bum2()
+    {
+        DisconnectPanel.SetActive(true);
+        SceneManager.LoadScene("Demo");
+        EscCanvas.SetActive(false);
+
+        PhotonNetwork.Disconnect();
+
+    }
+
+
     //서버가 연결이 안되었을때 실행되는 함수
     public override void OnDisconnected(DisconnectCause cause)
     {

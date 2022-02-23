@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-  public void ChangeFirstScene()
+    public GameObject player;
+    public void ChangeFirstScene()
     {
         SceneManager.LoadScene("Demo");
     }
@@ -13,6 +14,9 @@ public class SceneChanger : MonoBehaviour
     public void ChangeSecondScene()
     {
         SceneManager.LoadScene("SecondScene");
+        player = GameObject.FindWithTag("Player");
+        DontDestroyOnLoad(player);
+
     }
 
 

@@ -8,6 +8,8 @@ TagManager:
   - ChatEventSystem
   - ChatCanvas
   - ChatController
+  - EscCanvas
+  - NetworkManager
   layers:
   - Default
   - TransparentFX
