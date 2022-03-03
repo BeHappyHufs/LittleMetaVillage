@@ -70,7 +70,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.Instantiate("Player", Vector3.zero, Quaternion.identity);
         player = GameObject.FindWithTag("Player");
         buttonEvent.Start();
-        chatTest.Start();
+        chatTest.ChatStart();
     }
 
     //돌아가기 버튼

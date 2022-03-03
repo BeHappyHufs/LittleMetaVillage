@@ -14,7 +14,7 @@ public class ChatTest : MonoBehaviour, IChatClientListener {
 	public InputField NickNameInput;
 
 	// Use this for initialization
-	public void Start () {
+	public void ChatStart () {
 		
 		Application.runInBackground = true;
 
