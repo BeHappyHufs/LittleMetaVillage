@@ -60,7 +60,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
             var CM = GameObject.Find("CMCamera").GetComponent<CinemachineVirtualCamera>();
             CM.Follow = transform;
             CM.LookAt = transform;
-        } 
+        }
 
     }
     public void ChoiceCharacter()
