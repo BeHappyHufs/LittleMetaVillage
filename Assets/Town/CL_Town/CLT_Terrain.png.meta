@@ -1,9 +1,138 @@
 fileFormatVersion: 2
 guid: cd54a626c7dddac4aa79665b32026544
 TextureImporter:
-  fileIDToRecycleName: {}
+  internalIDToNameTable:
+  - first:
+      213: -1467856952107001302
+    second: CLT_Terrain_0
+  - first:
+      213: -4941086640313421805
+    second: CLT_Terrain_1
+  - first:
+      213: -3738052631930715642
+    second: CLT_Terrain_2
+  - first:
+      213: 875208051023606252
+    second: CLT_Terrain_3
+  - first:
+      213: -6866319712391287047
+    second: CLT_Terrain_4
+  - first:
+      213: -5558780787447785675
+    second: CLT_Terrain_5
+  - first:
+      213: 1520620849186558900
+    second: CLT_Terrain_6
+  - first:
+      213: 2975103685467595456
+    second: CLT_Terrain_7
+  - first:
+      213: -101953550691081033
+    second: CLT_Terrain_8
+  - first:
+      213: -7242048009338105172
+    second: CLT_Terrain_9
+  - first:
+      213: 6142520978095368988
+    second: CLT_Terrain_10
+  - first:
+      213: 1135089251322659048
+    second: CLT_Terrain_11
+  - first:
+      213: 2121799871128109924
+    second: CLT_Terrain_12
+  - first:
+      213: -4528911887301521493
+    second: CLT_Terrain_13
+  - first:
+      213: -2318290045359632182
+    second: CLT_Terrain_14
+  - first:
+      213: 5721914376985278918
+    second: CLT_Terrain_15
+  - first:
+      213: -7461789619157605685
+    second: CLT_Terrain_16
+  - first:
+      213: -3986209435570785451
+    second: CLT_Terrain_17
+  - first:
+      213: -5395990821081773109
+    second: CLT_Terrain_18
+  - first:
+      213: -2824548243118379346
+    second: CLT_Terrain_19
+  - first:
+      213: 3763772800578509873
+    second: CLT_Terrain_20
+  - first:
+      213: 121270604992797052
+    second: CLT_Terrain_21
+  - first:
+      213: 7756449351632718130
+    second: CLT_Terrain_22
+  - first:
+      213: -4834694127986714748
+    second: CLT_Terrain_23
+  - first:
+      213: -6402919580082687386
+    second: CLT_Terrain_24
+  - first:
+      213: 3480689164156362120
+    second: CLT_Terrain_25
+  - first:
+      213: -1031277567143582216
+    second: CLT_Terrain_26
+  - first:
+      213: -802218739808587949
+    second: CLT_Terrain_27
+  - first:
+      213: 1122173891335873805
+    second: CLT_Terrain_28
+  - first:
+      213: 413742685585012106
+    second: CLT_Terrain_29
+  - first:
+      213: -1629376506713656505
+    second: CLT_Terrain_30
+  - first:
+      213: 8225433891045484969
+    second: CLT_Terrain_31
+  - first:
+      213: -2291411501284798294
+    second: CLT_Terrain_32
+  - first:
+      213: -5584046737371221625
+    second: CLT_Terrain_33
+  - first:
+      213: -8715211984370085780
+    second: CLT_Terrain_34
+  - first:
+      213: -2973702601702201946
+    second: CLT_Terrain_35
+  - first:
+      213: -3912384862894792818
+    second: CLT_Terrain_36
+  - first:
+      213: 3676937150310651511
+    second: CLT_Terrain_37
+  - first:
+      213: -6274455960255489760
+    second: CLT_Terrain_38
+  - first:
+      213: 3279940771296488695
+    second: CLT_Terrain_39
+  - first:
+      213: 6658019872964282328
+    second: CLT_Terrain_40
+  - first:
+      213: 5011784403760065925
+    second: CLT_Terrain_41
+  - first:
+      213: 3041758469125130964
+    second: CLT_Terrain_42
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -32,15 +161,15 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -57,8 +186,9 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -69,7 +199,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -80,7 +211,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -91,17 +223,935 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: CLT_Terrain_0
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 64
+        width: 7
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a139c01ef11abe0800000000000000
+      internalID: -1467856952107001302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_1
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 272
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310b0bf21ebbd6bb0800000000000000
+      internalID: -4941086640313421805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_2
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 300
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6024e02bfe4cf1cc0800000000000000
+      internalID: -3738052631930715642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_3
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 300
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1f2d9d51d552c00800000000000000
+      internalID: 875208051023606252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 256
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fea7a4d99ee5b0a0800000000000000
+      internalID: -6866319712391287047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 128
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53798e3535e3bd2b0800000000000000
+      internalID: -5558780787447785675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 183
+        width: 152
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b351d11b945a1510800000000000000
+      internalID: 1520620849186558900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_7
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 284
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c260460a01b94920800000000000000
+      internalID: 2975103685467595456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_8
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 272
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4e77b29c9c59ef0800000000000000
+      internalID: -101953550691081033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_9
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 272
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2d31d94b31f7b90800000000000000
+      internalID: -7242048009338105172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_10
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 188
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b62ccf84e9e3550800000000000000
+      internalID: 6142520978095368988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_11
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0837df8a5a0cf00800000000000000
+      internalID: 1135089251322659048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_12
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 122
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4638f03bdb5227d10800000000000000
+      internalID: 2121799871128109924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_13
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 122
+        width: 62
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf495a32a21621c0800000000000000
+      internalID: -4528911887301521493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_14
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 144
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0d3009c77c3dfd0800000000000000
+      internalID: -2318290045359632182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_15
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 172
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c978635fc2586f40800000000000000
+      internalID: 5721914376985278918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_16
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 172
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2e96920e5627890800000000000000
+      internalID: -7461789619157605685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_17
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 128
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5533e7063a32ea8c0800000000000000
+      internalID: -3986209435570785451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 80
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb072affe69d15b0800000000000000
+      internalID: -5395990821081773109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_19
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 156
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaea9f586503dc8d0800000000000000
+      internalID: -2824548243118379346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_20
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 144
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c52c9bb6b9b3430800000000000000
+      internalID: 3763772800578509873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_21
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 144
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79da4409f6dea100800000000000000
+      internalID: 121270604992797052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 144
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2398062079174ab60800000000000000
+      internalID: 7756449351632718130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_23
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 35
+        width: 72
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4875faf4e47b7ecb0800000000000000
+      internalID: -4834694127986714748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 82
+        width: 80
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66237c7e0924427a0800000000000000
+      internalID: -6402919580082687386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_25
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 84
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d57137a54ed4030800000000000000
+      internalID: 3480689164156362120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_26
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 50
+        width: 14
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5e391448a20b1f0800000000000000
+      internalID: -1031277567143582216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_27
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 50
+        width: 14
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f2c857e42fdd4f0800000000000000
+      internalID: -802218739808587949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 52
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05ea496533c29f00800000000000000
+      internalID: 1122173891335873805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_29
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 70
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85f5bac7c8edb500800000000000000
+      internalID: 413742685585012106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_30
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 52
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74337ff23ba4369e0800000000000000
+      internalID: -1629376506713656505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_31
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 60
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9a93f2b8c962270800000000000000
+      internalID: 8225433891045484969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_32
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 64
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0dca741654330e0800000000000000
+      internalID: -2291411501284798294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_33
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 39
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7813fc1f31b7182b0800000000000000
+      internalID: -5584046737371221625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_34
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 39
+        width: 8
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60d46910e85d0780800000000000000
+      internalID: -8715211984370085780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_35
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 39
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5a2e53d394bb6d0800000000000000
+      internalID: -2973702601702201946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_36
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 39
+        width: 10
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f5a8622ba64b9c0800000000000000
+      internalID: -3912384862894792818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_37
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 39
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77614b16bda170330800000000000000
+      internalID: 3676937150310651511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_38
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 39
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02993223c87ace8a0800000000000000
+      internalID: -6274455960255489760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_39
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fca27de0c0b48d20800000000000000
+      internalID: 3279940771296488695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7078b7cc9066c50800000000000000
+      internalID: 6658019872964282328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_41
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 0
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d26f49c5f6d8540800000000000000
+      internalID: 5011784403760065925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CLT_Terrain_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 16
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da4db4363f763a20800000000000000
+      internalID: 3041758469125130964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
     spriteID: b332baff950eb48428140ebbe9e9e8ef
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
