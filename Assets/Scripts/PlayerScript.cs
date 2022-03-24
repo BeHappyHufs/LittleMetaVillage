@@ -53,7 +53,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
     {
         // 닉네임
         //NickNameText.text = PV.IsMine ? PhotonNetwork.NickName : PV.Owner.NickName;
-        NickNameText.text = PV.IsMine ? PhotonNetwork.NickName : signup.userName;
+        NickNameText.text = PV.IsMine ? PhotonNetwork.NickName : PV.Owner.NickName;
         NickNameText.color = PV.IsMine ? Color.green : Color.red;
 
         if (PV.IsMine)
@@ -75,7 +75,24 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
             PhotonNetwork.LeaveRoom();
             Debug.Log("병원으로 들어감");
         }
-        //else if (other.gameObject.name == "")
+        else if(other.gameObject.name == "House")
+        {
+            callRoom = 2;
+            PhotonNetwork.LeaveRoom();
+            Debug.Log("집으로 들어감");
+        }
+        else if(other.gameObject.name == "Room")
+        {
+            callRoom = 3;
+            PhotonNetwork.LeaveRoom();
+            Debug.Log("방으로 들어감");
+        }
+        else
+        {
+            callRoom = 0;
+            PhotonNetwork.LeaveRoom();
+            Debug.Log("메인 화면으로 돌아옴");
+        }
     }
 
 

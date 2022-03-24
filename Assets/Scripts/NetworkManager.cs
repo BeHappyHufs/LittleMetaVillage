@@ -60,12 +60,27 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             PhotonNetwork.JoinOrCreateRoom("Hospital", new RoomOptions { MaxPlayers = 6 }, null);
             Debug.Log("병원 서버 입장 완료");
         }
+        else if(PlayerScript.callRoom == 2)
+        {
+            PhotonNetwork.LocalPlayer.NickName = signup.userName;
+            NickNameInput.text = signup.userName;
+            PhotonNetwork.JoinOrCreateRoom("House", new RoomOptions { MaxPlayers = 6 }, null);
+            Debug.Log("집 서버 입장 완료");
+        }
+        else if(PlayerScript.callRoom == 3)
+        {
+            PhotonNetwork.LocalPlayer.NickName = signup.userName;
+            NickNameInput.text = signup.userName;
+            PhotonNetwork.JoinOrCreateRoom("Room", new RoomOptions { MaxPlayers = 6 }, null);
+            Debug.Log("방 서버 입장 완료");
+        }
         else
         {
             PhotonNetwork.LocalPlayer.NickName = signup.userName;
             NickNameInput.text = signup.userName;
             PhotonNetwork.JoinOrCreateRoom("Lungnaha", new RoomOptions { MaxPlayers = 6 }, null);
-            Debug.Log("다른 방 입장 완료");
+            Debug.Log("메인 화면 입장 완료");
+            Debug.Log(PhotonNetwork.LocalPlayer.NickName);
         }
     }
 
