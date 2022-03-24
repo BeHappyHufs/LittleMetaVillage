@@ -153,6 +153,7 @@ GameObject:
   - component: {fileID: 1074364060212056803}
   - component: {fileID: 8402976523990245045}
   - component: {fileID: 8755159725928854395}
+  - component: {fileID: 4311297559254459807}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -345,6 +346,20 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &4311297559254459807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4757535834838429958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f1496332ac2fe429de4364be7daa55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NickNameText: {fileID: 598972822232817014}
+  PV: {fileID: 8402976523990245045}
 --- !u!1 &4845201584521686776
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,7 +439,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: kim
 --- !u!114 &9180525791889596600
 MonoBehaviour:
   m_ObjectHideFlags: 0
