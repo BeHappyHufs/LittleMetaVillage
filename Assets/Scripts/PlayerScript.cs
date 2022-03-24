@@ -41,6 +41,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
     public int num_hair;
     public int num_kit;
 
+    public static int callRoom = 0;
 
     void Start()
     {
@@ -51,7 +52,8 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
     void Awake()
     {
         // 닉네임
-        NickNameText.text = PV.IsMine ? PhotonNetwork.NickName : PV.Owner.NickName;
+        //NickNameText.text = PV.IsMine ? PhotonNetwork.NickName : PV.Owner.NickName;
+        NickNameText.text = PV.IsMine ? PhotonNetwork.NickName : signup.userName;
         NickNameText.color = PV.IsMine ? Color.green : Color.red;
 
         if (PV.IsMine)
@@ -63,6 +65,21 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
         }
 
     }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Hospital")
+        {
+            callRoom = 1;
+            PhotonNetwork.LeaveRoom();
+            Debug.Log("병원으로 들어감");
+        }
+        //else if (other.gameObject.name == "")
+    }
+
+
+
     public void ChoiceCharacter()
     {
         c_body.sprite = body[num_body];

@@ -18,6 +18,8 @@ public class signup : MonoBehaviour
     public GameObject failState;
     public GameObject speakObject;
 
+    public static string userName;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,8 @@ public class signup : MonoBehaviour
     }
     public void checkPlayer()
     {
+
+        userName = id.text;
         using (MySqlConnection connection = new MySqlConnection("Server=us-cdbr-east-04.cleardb.com;Port=3306;Database=heroku_9739fee54be3ce9;Uid=b30ac1742c1d56;Pwd=6db3d0ba"))
         {
             insertRoomBut.SetActive(false);

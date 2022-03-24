@@ -52,17 +52,18 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
-        //PhotonNetwork.LocalPlayer.NickName = NickNameInput.text;
-        if (SceneChanger.callRoom == 1)
+        ///PhotonNetwork.LocalPlayer.NickName = NickNameInput.text;
+        if (PlayerScript.callRoom == 1)
         {
-            PhotonNetwork.LocalPlayer.NickName = SceneChanger.myName;
-            NickNameInput.text = SceneChanger.myName;
-            PhotonNetwork.JoinOrCreateRoom("Room", new RoomOptions { MaxPlayers = 6 }, null);
-            Debug.Log("메인 방 입장 완료");
+            PhotonNetwork.LocalPlayer.NickName = signup.userName;
+            NickNameInput.text = signup.userName;
+            PhotonNetwork.JoinOrCreateRoom("Hospital", new RoomOptions { MaxPlayers = 6 }, null);
+            Debug.Log("병원 서버 입장 완료");
         }
         else
         {
-            PhotonNetwork.LocalPlayer.NickName = NickNameInput.text;
+            PhotonNetwork.LocalPlayer.NickName = signup.userName;
+            NickNameInput.text = signup.userName;
             PhotonNetwork.JoinOrCreateRoom("Lungnaha", new RoomOptions { MaxPlayers = 6 }, null);
             Debug.Log("다른 방 입장 완료");
         }
