@@ -55,6 +55,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         ///PhotonNetwork.LocalPlayer.NickName = NickNameInput.text;
         if (PlayerScript.callRoom == 1)
         {
+            
             PhotonNetwork.LocalPlayer.NickName = signup.userName;
             NickNameInput.text = signup.userName;
             PhotonNetwork.JoinOrCreateRoom("Hospital", new RoomOptions { MaxPlayers = 6 }, null);

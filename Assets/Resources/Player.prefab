@@ -269,6 +269,7 @@ MonoBehaviour:
   num_face: 0
   num_hair: 0
   num_kit: 0
+  player: {fileID: 4757535834838429958}
 --- !u!50 &6354740109309672931
 Rigidbody2D:
   serializedVersion: 4

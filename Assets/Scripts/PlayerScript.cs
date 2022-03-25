@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using Cinemachine;
 using MySql.Data.MySqlClient;
 using System;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
@@ -43,6 +44,8 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
 
     public static int callRoom = 0;
 
+    public GameObject player;
+
     void Start()
     {
         ReadData();
@@ -63,37 +66,80 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
             CM.Follow = transform;
             CM.LookAt = transform;
         }
+        
 
     }
 
-
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.name == "Hospital")
+        if (other.gameObject.tag == "Hospital")
         {
             callRoom = 1;
             PhotonNetwork.LeaveRoom();
             Debug.Log("병원으로 들어감");
+            SceneManager.LoadScene("Hospital");
+            player = GameObject.FindWithTag("Player");
+            DontDestroyOnLoad(player);
         }
-        else if(other.gameObject.name == "House")
+        else if (other.gameObject.tag == "House")
         {
             callRoom = 2;
             PhotonNetwork.LeaveRoom();
             Debug.Log("집으로 들어감");
+            SceneManager.LoadScene("House");
+            player = GameObject.FindWithTag("Player");
+            DontDestroyOnLoad(player);
         }
-        else if(other.gameObject.name == "Room")
+        else if (other.gameObject.tag == "Room")
         {
             callRoom = 3;
             PhotonNetwork.LeaveRoom();
             Debug.Log("방으로 들어감");
+            SceneManager.LoadScene("Room");
+            player = GameObject.FindWithTag("Player");
+            DontDestroyOnLoad(player);
         }
-        else
+        else if (other.gameObject.tag == "Door")
         {
             callRoom = 0;
             PhotonNetwork.LeaveRoom();
             Debug.Log("메인 화면으로 돌아옴");
+            SceneManager.LoadScene("Main");
+            player = GameObject.FindWithTag("Player");
+            DontDestroyOnLoad(player);
         }
     }
+ 
+      
+
+
+    /*    private void OnTriggerEnter2D(Collider other)
+        {
+            if (other.gameObject.name == "Hospital")
+            {
+                callRoom = 1;
+                PhotonNetwork.LeaveRoom();
+                Debug.Log("병원으로 들어감");
+            }
+            else if(other.gameObject.name == "House")
+            {
+                callRoom = 2;
+                PhotonNetwork.LeaveRoom();
+                Debug.Log("집으로 들어감");
+            }
+            else if(other.gameObject.name == "Room")
+            {
+                callRoom = 3;
+                PhotonNetwork.LeaveRoom();
+                Debug.Log("방으로 들어감");
+            }
+            else
+            {
+                callRoom = 0;
+                PhotonNetwork.LeaveRoom();
+                Debug.Log("메인 화면으로 돌아옴");
+            }
+        }*/
 
 
 
@@ -177,6 +223,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
             }
        
         }
+
 
       
     }

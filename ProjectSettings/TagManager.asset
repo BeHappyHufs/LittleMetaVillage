@@ -10,6 +10,7 @@ TagManager:
   - ChatController
   - EscCanvas
   - NetworkManager
+  - Hospital
   layers:
   - Default
   - TransparentFX

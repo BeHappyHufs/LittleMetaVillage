@@ -28,7 +28,6 @@ public class SceneChanger : MonoBehaviour
         //Destroy(speakObject);
         player = GameObject.FindWithTag("Player");
         DontDestroyOnLoad(player);
-        
 
     }
 

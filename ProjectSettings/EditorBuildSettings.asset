@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: c391df42c6a51bd4b8190cbb6622184f
+  - enabled: 1
+    path: Assets/Scenes/House.unity
+    guid: 7304250c6c355e14ba150e58500e5ed3
+  - enabled: 1
+    path: Assets/Scenes/Hospital.unity
+    guid: 705f56c537fa3864ca22b75ca75c91fd
+  - enabled: 1
+    path: Assets/Scenes/Room.unity
+    guid: dbf0cac1a618cd949a45a2eaadc6c422
   m_configObjects: {}
