@@ -11,6 +11,9 @@ TagManager:
   - EscCanvas
   - NetworkManager
   - Hospital
+  - House
+  - Room
+  - Door
   layers:
   - Default
   - TransparentFX
