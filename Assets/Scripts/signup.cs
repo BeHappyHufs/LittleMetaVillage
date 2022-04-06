@@ -56,6 +56,7 @@ public class signup : MonoBehaviour
                     }
                     else
                     {
+                        Debug.Log("회원정보가 존재하지 않습니다.");
                         insertRoomBut.SetActive(false);
                         failState.SetActive(true);
                     }
