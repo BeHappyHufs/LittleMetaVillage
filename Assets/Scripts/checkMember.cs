@@ -57,6 +57,7 @@ public class checkMember : MonoBehaviourPunCallbacks
                     if (player.NickName == NickNameText.text)
                     {
                         PhotonNetwork.Disconnect();
+                        Debug.Log("이전에 플레이어가 위치하고 있습니다.");
                     }
                     check++;
                     Debug.Log("아래는 다른 유저 이름");

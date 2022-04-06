@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class ButtonEvent : MonoBehaviour
 {
@@ -22,6 +22,8 @@ public class ButtonEvent : MonoBehaviour
         else
         {
             Debug.Log("No game object called");
+            Debug.Log("동일 회원이 이미 접속 중 입니다.");
+            SceneManager.LoadScene("SamePlayer");
         }
     }
 
