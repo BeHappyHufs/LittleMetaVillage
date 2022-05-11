@@ -33106,6 +33106,8 @@ MonoBehaviour:
   player: {fileID: 0}
   buttonEvent: {fileID: 0}
   chatTest: {fileID: 0}
+  speakObject: {fileID: 0}
+  NickNameText: {fileID: 0}
 --- !u!4 &1098347601
 Transform:
   m_ObjectHideFlags: 0

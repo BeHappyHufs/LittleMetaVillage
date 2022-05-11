@@ -35,6 +35,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     //ChatTest클래스 타입의 채팅 재생성 : 채팅이 두번 만들어지는 문제 발생;;;
     public ChatTest chatTest;
 
+    public GameObject speakObject;
+
+    public Text NickNameText;
+
 
     void Awake()
     {
@@ -46,6 +50,23 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public void Connect()
     {
         PhotonNetwork.ConnectUsingSettings();
+        Destroy(speakObject);
+        Debug.Log("-----------------");
+        Debug.Log(NickNameText.text);
+        foreach (Player player in PhotonNetwork.PlayerListOthers)
+        {
+            Debug.Log(NickNameText.text);
+            Debug.Log(player.NickName);
+            if (player.NickName == NickNameText.text)
+            {
+                SceneManager.LoadScene("SamePlayer");
+                //PhotonNetwork.Disconnect();
+                Debug.Log("이전에 플레이어가 위치하고 있습니다.");
+            }
+            Debug.Log("아래는 다른 유저 이름");
+            Debug.Log(player.NickName);
+        }
+        Debug.Log("+++++++++++++++++");
         SceneManager.LoadScene("Main");
     }
 

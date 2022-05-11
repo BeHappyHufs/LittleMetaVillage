@@ -11,6 +11,7 @@ public class ButtonEvent : MonoBehaviour
     // 그 게임 오브제트에 해당하는 PlayerScript를 연동
     public PlayerScript batcontrol2;
 
+
       
     public void Start()
     {
@@ -23,8 +24,9 @@ public class ButtonEvent : MonoBehaviour
         {
             Debug.Log("No game object called");
             Debug.Log("동일 회원이 이미 접속 중 입니다.");
-            SceneManager.LoadScene("SamePlayer");
+            //SceneManager.LoadScene("SamePlayer");
         }
+
     }
 
     // Update is called once per frame

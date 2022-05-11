@@ -181,6 +181,7 @@ public class newPlayer : MonoBehaviour
                     failState.SetActive(false);
                     Debug.Log("가입 성공");
                     Debug.Log(insertQ);
+                    SceneManager.LoadScene("Demo");
                 }
                 else
                 {

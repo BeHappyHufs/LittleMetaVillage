@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class EndApp : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class EndApp : MonoBehaviour
 
     public void endapp()
     {
+        PhotonNetwork.Disconnect();
         Application.Quit();
     }
 

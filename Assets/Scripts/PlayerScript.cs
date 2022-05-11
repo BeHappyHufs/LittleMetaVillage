@@ -24,8 +24,8 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
     Vector3 moveVelocity = Vector3.zero;
     float moveSpeed = 20;
 
+    //public NetworkManager nm;
     public Text NickNameText;
-
     public PhotonView PV;
 
     public Image c_body;

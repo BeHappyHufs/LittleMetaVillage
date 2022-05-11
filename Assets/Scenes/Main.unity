@@ -1401,6 +1401,8 @@ MonoBehaviour:
   player: {fileID: 4757535834838429958, guid: 6f4d48710a87f0b498eeb3352ab1ff19, type: 3}
   buttonEvent: {fileID: 1957485520}
   chatTest: {fileID: 1422991071}
+  speakObject: {fileID: 0}
+  NickNameText: {fileID: 0}
 --- !u!4 &69162463
 Transform:
   m_ObjectHideFlags: 0
@@ -5687,7 +5689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &416750485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8980,7 +8982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 4757535834838429958, guid: 6f4d48710a87f0b498eeb3352ab1ff19, type: 3}
-  speakObject: {fileID: 0}
+  speakObject: {fileID: 416750484}
 --- !u!4 &649572201
 Transform:
   m_ObjectHideFlags: 0
@@ -9706,7 +9708,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000048525995, y: -446.1487}
+  m_AnchoredPosition: {x: -0.000048525995, y: -446.1689}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &683683622
@@ -54893,7 +54895,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 157447359}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99408996
+  m_Size: 0.8583156
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
