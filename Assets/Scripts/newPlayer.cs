@@ -10,12 +10,150 @@ public class newPlayer : MonoBehaviour
 {
     public InputField id;
     public InputField password;
-    public InputField face;
-    public InputField hair;
-    public InputField body;
-    public InputField kit;
+    //public InputField face;
+    //public InputField hair;
+    //public InputField body;
+    //public InputField kit;
     public GameObject upBut;
     public GameObject failState;
+    public GameObject connectButton;
+    public GameObject preButton;
+
+    public GameObject signUp1;
+    public GameObject signUp2;
+    public GameObject signUp3;
+    public GameObject signUp4;
+    public GameObject signUp5;
+
+    public String hair = "0";
+    public String face = "0";
+    public String body = "0";
+    public String kit = "0";
+
+
+    public void nextButton1()
+    {
+        signUp1.SetActive(false);
+        signUp2.SetActive(true);
+    }
+
+    public void nextButton2()
+    {
+        signUp2.SetActive(false);
+        signUp3.SetActive(true);
+
+    }
+    public void preButton2()
+    {
+        signUp2.SetActive(false);
+        signUp1.SetActive(true);
+
+    }
+
+    public void nextButton3()
+    {
+        signUp3.SetActive(false);
+        signUp4.SetActive(true);
+
+    }
+
+    public void preButton3()
+    {
+        signUp3.SetActive(false);
+        signUp2.SetActive(true);
+
+    }
+
+    public void nextButton4()
+    {
+        signUp4.SetActive(false);
+        signUp5.SetActive(true);
+
+    }
+
+    public void preButton4()
+    {
+        signUp4.SetActive(false);
+        signUp3.SetActive(true);
+
+    }
+
+    public void preButton5()
+    {
+        signUp5.SetActive(false);
+        signUp4.SetActive(true);
+
+    }
+
+    public void hairButton1()
+    {
+        hair = "0";
+    }
+
+    public void hairButton2()
+    {
+        hair = "1";
+    }
+
+    public void hairButton3()
+    {
+        hair = "2";
+    }
+
+    public void hairButton4()
+    {
+        hair = "3";
+    }
+
+    public void faceButton1()
+    {
+        face = "0";
+    }
+
+    public void faceButton2()
+    {
+        face = "1";
+    }
+
+    public void faceButton3()
+    {
+        face = "2";
+    }
+
+    public void bodyButton1()
+    {
+        body = "0";
+    }
+
+    public void bodyButton2()
+    {
+        body = "1";
+    }
+
+    public void bodyButton3()
+    {
+        body = "2";
+    }
+
+    public void kitButton1()
+    {
+        kit = "0";
+    }
+
+    public void kitButton2()
+    {
+        kit = "1";
+    }
+
+    public void kitButton3()
+    {
+        kit = "2";
+    }
+
+    public void kitButton4()
+    {
+        kit = "3";
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +170,7 @@ public class newPlayer : MonoBehaviour
         {
             upBut.SetActive(false);
             failState.SetActive(false);
-            string insertQ = "INSERT INTO avatar(id,body,face,hair,kit,password) VALUES('" + id.text + "', " + body.text + ", " + face.text + ", " + hair.text + ", " + kit.text + ", "+password.text + ")";
+            string insertQ = "INSERT INTO avatar(id,body,face,hair,kit,password) VALUES('" + id.text + "', " + body + ", " + face + ", " + hair + ", " + kit + ", "+password.text + ")";
             try
             {
                 connection.Open();
