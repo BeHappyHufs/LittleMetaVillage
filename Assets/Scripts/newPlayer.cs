@@ -25,6 +25,7 @@ public class newPlayer : MonoBehaviour
     public GameObject signUp3;
     public GameObject signUp4;
     public GameObject signUp5;
+    public GameObject doubleCheck;
 
     public String hair = "0";
     public String face = "0";
@@ -162,7 +163,14 @@ public class newPlayer : MonoBehaviour
         kit = "3";
     }
 
-   
+    public void okButton()
+    {
+        Debug.Log("enter");
+        doubleCheck.SetActive(false);
+        signUp5.SetActive(true);
+    }
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -178,7 +186,7 @@ public class newPlayer : MonoBehaviour
     {
         using (MySqlConnection connection = new MySqlConnection("Server=us-cdbr-east-04.cleardb.com;Port=3306;Database=heroku_9739fee54be3ce9;Uid=b30ac1742c1d56;Pwd=6db3d0ba"))
         {
-            upBut.SetActive(false);
+            //upBut.SetActive(false);
             failState.SetActive(false);
             string insertQ = "INSERT INTO avatar(id,body,face,hair,kit,password) VALUES('" + id.text + "', " + body + ", " + face + ", " + hair + ", " + kit + ", "+password.text + ")";
             try
@@ -206,6 +214,8 @@ public class newPlayer : MonoBehaviour
                 Debug.Log("완전 실패");
                 Debug.Log(insertQ);
                 Debug.Log(ex.ToString());
+                doubleCheck.SetActive(true);
+                signUp5.SetActive(false);
             }
         }
     }
