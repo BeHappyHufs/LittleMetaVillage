@@ -46,6 +46,10 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
 
     public GameObject player;
 
+    // 씬 전환시 소리추가
+    AudioSource audioSource;
+    public AudioClip sound;
+
     void Start()
     {
         ReadData();
@@ -58,6 +62,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
         //NickNameText.text = PV.IsMine ? PhotonNetwork.NickName : PV.Owner.NickName;
         NickNameText.text = PV.IsMine ? PhotonNetwork.NickName : PV.Owner.NickName;
         NickNameText.color = PV.IsMine ? Color.green : Color.red;
+        this.audioSource = GetComponent<AudioSource>();
 
         if (PV.IsMine)
         {
@@ -78,6 +83,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
             PhotonNetwork.LeaveRoom();
             Debug.Log("병원으로 들어감");
             SceneManager.LoadScene("Hospital");
+            audioSource.clip = sound;
             player = GameObject.FindWithTag("Player");
             DontDestroyOnLoad(player);
         }
@@ -87,6 +93,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
             PhotonNetwork.LeaveRoom();
             Debug.Log("집으로 들어감");
             SceneManager.LoadScene("House");
+            audioSource.clip = sound;
             player = GameObject.FindWithTag("Player");
             DontDestroyOnLoad(player);
         }
@@ -96,6 +103,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
             PhotonNetwork.LeaveRoom();
             Debug.Log("방으로 들어감");
             SceneManager.LoadScene("Room");
+            audioSource.clip = sound;
             player = GameObject.FindWithTag("Player");
             DontDestroyOnLoad(player);
         }
@@ -105,6 +113,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
             PhotonNetwork.LeaveRoom();
             Debug.Log("메인 화면으로 돌아옴");
             SceneManager.LoadScene("Main");
+            audioSource.clip = sound;
             player = GameObject.FindWithTag("Player");
             DontDestroyOnLoad(player);
         }

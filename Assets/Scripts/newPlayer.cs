@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using MySql.Data.MySqlClient;
 using System;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
 public class newPlayer : MonoBehaviour
 {
@@ -30,6 +31,12 @@ public class newPlayer : MonoBehaviour
     public String body = "0";
     public String kit = "0";
 
+    public void preButton1()
+    {
+        signUp1.SetActive(false);
+        PhotonNetwork.LeaveRoom();
+        SceneManager.LoadScene("Demo");
+    }
 
     public void nextButton1()
     {
@@ -155,6 +162,8 @@ public class newPlayer : MonoBehaviour
         kit = "3";
     }
 
+   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -164,6 +173,7 @@ public class newPlayer : MonoBehaviour
     {
         SceneManager.LoadScene("Demo");
     }
+
     public void up()
     {
         using (MySqlConnection connection = new MySqlConnection("Server=us-cdbr-east-04.cleardb.com;Port=3306;Database=heroku_9739fee54be3ce9;Uid=b30ac1742c1d56;Pwd=6db3d0ba"))
