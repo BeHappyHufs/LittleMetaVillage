@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using Cinemachine;
 using MySql.Data.MySqlClient;
 using System;
+using UnityEngine.SceneManagement;
 public class checkMember : MonoBehaviourPunCallbacks
 {
     public Text NickNameText;
@@ -58,6 +59,7 @@ public class checkMember : MonoBehaviourPunCallbacks
                     {
                         PhotonNetwork.Disconnect();
                         Debug.Log("이전에 플레이어가 위치하고 있습니다.");
+                        SceneManager.LoadScene("SamePlayer");
                     }
                     check++;
                     Debug.Log("아래는 다른 유저 이름");
