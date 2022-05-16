@@ -46,6 +46,9 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
 
     public GameObject player;
 
+    // 애니메이션
+    Animator anim;
+
     // 씬 전환시 소리추가
     AudioSource audioSource;
     public AudioClip sound;
@@ -58,6 +61,9 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
 
     void Awake()
     {
+        // 애니메이션
+        anim = GetComponent<Animator>();
+
         // 닉네임
         //NickNameText.text = PV.IsMine ? PhotonNetwork.NickName : PV.Owner.NickName;
         NickNameText.text = PV.IsMine ? PhotonNetwork.NickName : PV.Owner.NickName;
@@ -120,7 +126,6 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
     }
  
       
-
 
     /*    private void OnTriggerEnter2D(Collider other)
         {
@@ -185,8 +190,6 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
                     num_hair = (int)table["hair"];
                     num_kit = (int)table["kit"];
 
-
-
                 }
                 table.Close();
             }
@@ -208,32 +211,44 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
             {
                 moveVelocity = new Vector3(-0.10f,0,0);
                 transform.position += moveVelocity*moveSpeed*Time.deltaTime;
+                print("Left");
+                anim.SetBool("isWalkingLeft", true);
             }
 
         if(RightMove)
             {
                 moveVelocity = new Vector3(+0.10f,0,0);
                 transform.position += moveVelocity*moveSpeed*Time.deltaTime;
-
+                print("Right");
+                anim.SetBool("isWalkingRight", true);
             }
 
         if(UPMove)
             {
                 moveVelocity = new Vector3(0,+0.10f,0);
                 transform.position += moveVelocity*moveSpeed*Time.deltaTime;
-
+                print("Up");
+                anim.SetBool("isWalkingUp", true);
             }
         
         if(DownMove)
             {
                 moveVelocity = new Vector3(0,-0.10f,0);
                 transform.position += moveVelocity*moveSpeed*Time.deltaTime;
-
+                print("Down");
+                anim.SetBool("isWalkingDown", true);
             }
-       
+
+        if (!RightMove && !LeftMove && !UPMove && !DownMove)
+            {
+                print("Stop");
+                anim.SetBool("isWalkingLeft", false);
+                anim.SetBool("isWalkingRight", false);
+                anim.SetBool("isWalkingUp", false);
+                anim.SetBool("isWalkingDown", false);
+            }
+
         }
-
-
       
     }
 
@@ -241,7 +256,5 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
     {
       
     }
-
-
 
 }
