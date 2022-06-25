@@ -35,7 +35,7 @@ public class newPlayer : MonoBehaviour
     public void preButton1()
     {
         signUp1.SetActive(false);
-        PhotonNetwork.LeaveRoom();
+        //PhotonNetwork.LeaveRoom();
         SceneManager.LoadScene("Demo");
     }
 

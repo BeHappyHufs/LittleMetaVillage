@@ -50,7 +50,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public void Connect()
     {
         PhotonNetwork.ConnectUsingSettings();
-        Destroy(speakObject);
+        //Destroy(speakObject);
         Debug.Log("-----------------");
         Debug.Log(NickNameText.text);
         foreach (Player player in PhotonNetwork.PlayerListOthers)
@@ -61,6 +61,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             {
                 SceneManager.LoadScene("SamePlayer");
                 //PhotonNetwork.Disconnect();
+                Destroy(speakObject);
+
                 Debug.Log("이전에 플레이어가 위치하고 있습니다.");
             }
             Debug.Log("아래는 다른 유저 이름");

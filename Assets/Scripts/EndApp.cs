@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 public class EndApp : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class EndApp : MonoBehaviour
         PhotonNetwork.Disconnect();
         Debug.Log("게임 나갑니다.");
         Application.Quit();
+        //SceneManager.LoadScene("Demo");
     }
 
 }
