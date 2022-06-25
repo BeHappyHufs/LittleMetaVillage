@@ -8132,8 +8132,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 30.1}
-  m_SizeDelta: {x: 120.8134, y: 30}
+  m_AnchoredPosition: {x: -1.055, y: 30.1}
+  m_SizeDelta: {x: 186.55052, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &249287766
 MonoBehaviour:
@@ -16337,8 +16337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.3, y: 2.7}
-  m_SizeDelta: {x: 117.414566, y: 30}
+  m_AnchoredPosition: {x: -1.519, y: 2.7}
+  m_SizeDelta: {x: 181.30226, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &469365555
 MonoBehaviour:
@@ -16382,8 +16382,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 469365556}
   m_TextComponent: {fileID: 159295153}
   m_Placeholder: {fileID: 1436783179}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -26712,7 +26712,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845266984}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.0868993, y: -4.189904, z: -10}
+  m_LocalPosition: {x: 0.135324, y: -4.189904, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1638537364}
@@ -46161,7 +46161,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBE44\uBC00\uBC88\uD638"
+  m_Text: "\uBE44\uBC00\uBC88\uD638(6\uC790 \uC774\uD558)"
 --- !u!222 &1436783180
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -48044,7 +48044,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2C9\uB124\uC784(6\uC790\uC774\uD558)"
+  m_Text: "\uB2C9\uB124\uC784(6\uC790 \uC774\uD558)"
 --- !u!222 &1481869826
 CanvasRenderer:
   m_ObjectHideFlags: 0

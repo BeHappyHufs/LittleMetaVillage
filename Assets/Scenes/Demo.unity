@@ -1176,8 +1176,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 26522364}
   m_TextComponent: {fileID: 1622636003}
   m_Placeholder: {fileID: 757518266}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -22343,7 +22343,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB2C9\uB124\uC784(6\uC790\uC774\uD558)"
+  m_Text: "\uB2C9\uB124\uC784(6\uC790 \uC774\uD558)"
 --- !u!222 &729349655
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23624,7 +23624,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBE44\uBC00\uBC88\uD638"
+  m_Text: "\uBE44\uBC00\uBC88\uD638(6\uC790 \uC774\uD558)"
 --- !u!222 &757518267
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -43902,7 +43902,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443362308}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.0868993, y: -4.189904, z: -10}
+  m_LocalPosition: {x: 0.135324, y: -4.189904, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1971447665}
