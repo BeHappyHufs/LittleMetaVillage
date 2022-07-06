@@ -209,7 +209,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
         if(PV.IsMine){
              if(LeftMove)
             {
-                moveVelocity = new Vector3(-0.10f,0,0);
+                moveVelocity = new Vector3(-0.20f,0,0);
                 transform.position += moveVelocity*moveSpeed*Time.deltaTime;
                 print("Left");
                 anim.SetBool("isWalkingLeft", true);
@@ -217,7 +217,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
 
         if(RightMove)
             {
-                moveVelocity = new Vector3(+0.10f,0,0);
+                moveVelocity = new Vector3(+0.20f,0,0);
                 transform.position += moveVelocity*moveSpeed*Time.deltaTime;
                 print("Right");
                 anim.SetBool("isWalkingRight", true);
@@ -225,7 +225,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
 
         if(UPMove)
             {
-                moveVelocity = new Vector3(0,+0.10f,0);
+                moveVelocity = new Vector3(0,+0.20f,0);
                 transform.position += moveVelocity*moveSpeed*Time.deltaTime;
                 print("Up");
                 anim.SetBool("isWalkingUp", true);
@@ -233,7 +233,7 @@ public class PlayerScript :  MonoBehaviourPunCallbacks, IPunObservable
         
         if(DownMove)
             {
-                moveVelocity = new Vector3(0,-0.10f,0);
+                moveVelocity = new Vector3(0,-0.20f,0);
                 transform.position += moveVelocity*moveSpeed*Time.deltaTime;
                 print("Down");
                 anim.SetBool("isWalkingDown", true);
