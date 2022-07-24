@@ -158,6 +158,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
         player = GameObject.FindWithTag("Player");
         player.SetActive(false);
+        DisconnectPanel.SetActive(true);
+        EscCanvas.SetActive(false);
+
+        PhotonNetwork.Disconnect();
+        Application.Quit();
+
 
     }
 
@@ -165,6 +171,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     //다시 한번 나가기 버튼 클릭시 수행
     public void DisConnect_Bum()
     {
+        //player = GameObject.FindWithTag("Player");
+        //player.SetActive(false);
         DisconnectPanel.SetActive(true);
         EscCanvas.SetActive(false);
 
