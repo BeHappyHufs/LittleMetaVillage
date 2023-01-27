@@ -48,24 +48,6 @@
 
 </br>
 
-## 💡 성장 경험
-
-### <만들고 싶다는 무언가가 있으면 맨땅의 헤딩 부터…..>
-
-메타버스에 호기심있는 4명의 친구들이 모여 아무것도 모르는 상태에서 게더타운의 모바일 형태를 만들어보자는 집념 하나로 유니티라는 Tool부터 공부를 시작해서 만들어낸 성과물이다. 
-
-새로운 기술에 대해 거부감없이 하고자 하는 집념만 있으면 무엇이든 도전하고 성취 할 수 있다는 것을 느꼈다.
-
-</br>
-
-### <자동차를 만든 사람은 안전밸트까지는 생각하지 못한다>
-
-개발 후 배포하기 전까지만 해도 사용자에게 편의적으로 잘 만든 서비스라고 생각했는데, 실제로 다운로드 받은 사용자들의 피드백을 들어보니 사용자 입장에서는 또 다른 불편함이 있다라는것을 발견하였다.
-
-좋은 서비스가 되기위해서는 배포 후 사용자의 피드백을 잘 반영해야된다.
-
-</br>
-
 ## 👀 서비스 화면
 
 <서비스 출시>
@@ -74,7 +56,7 @@ https://play.google.com/store/apps/details?id=com.BeHappy.LittleMetaVillage
 
 |               배포 APP 서비스            |               회원가입 및 로그인            |
 | :---------------------------------:   |    :-------------------------------:   |
-| <img src="https://user-images.githubusercontent.com/64251951/215010955-73873cb5-1015-4a44-80df-62dd44d6711c.png" width="350" height="450"/>|<img src="https://user-images.githubusercontent.com/64251951/215011090-6ca921ae-19df-4b7d-b379-4fcba65d3569.png" width="350" height="450"/>
+| <img src="https://user-images.githubusercontent.com/64251951/215010955-73873cb5-1015-4a44-80df-62dd44d6711c.png" width="500" height="450"/>|<img src="https://user-images.githubusercontent.com/64251951/215011090-6ca921ae-19df-4b7d-b379-4fcba65d3569.png" width="500" height="450"/>
 |               로그인 후 로비              |              회의 룸 장소                 |
-| <img src="https://user-images.githubusercontent.com/64251951/215010955-73873cb5-1015-4a44-80df-62dd44d6711c.png" width="350" height="450"/>|<img src="https://user-images.githubusercontent.com/64251951/215011340-985d7dd6-927e-4a9e-b4ee-c0ce2e24e741.png" width="350" height="450"/>
+| <img src="https://user-images.githubusercontent.com/64251951/215010955-73873cb5-1015-4a44-80df-62dd44d6711c.png" width="500" height="450"/>|<img src="https://user-images.githubusercontent.com/64251951/215011340-985d7dd6-927e-4a9e-b4ee-c0ce2e24e741.png" width="500" height="450"/>
 
