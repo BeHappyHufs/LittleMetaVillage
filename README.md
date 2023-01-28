@@ -15,7 +15,7 @@
 - A space for users to communicate was created using the Photon server, and up to 20 users can participate. And when the user logs in, the user character is fetched based on the user information existing in the database. Various connected users can hold meetings in various communication places such as lobby, home, room, hospital, etc., and realism is given by using chatting and microphones.
 - Currently, there are lobbies, rooms, hospitals, etc., but when the service develops, more spaces will be created to provide convenience
 
-#### service
-- https://play.google.com/store/apps/details?id=com.BeHappy.LittleMetaVillage
-
-
+#### Deployed service
+```
+https://play.google.com/store/apps/details?id=com.BeHappy.LittleMetaVillage
+```
